@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:tem="http://tempuri.org/" xmlns:tec="http://schemas.datacontract.org/2004/07/TechInspection.Domain.DataContracts">
+    <soapenv:Header/>
+    <soapenv:Body>
+      <tem:GetCardByVin>
+            <tem:user>
+                <tec:Name>{{ name }}</tec:Name>
+                <tec:Password>{{ password }}</tec:Password>
+                <tec:ExtSystem></tec:ExtSystem>
+            </tem:user>
+            <tem:Purpose>ForDublicate</tem:Purpose>
+            <tem:vin>{{#if vin }}{{ vin }}{{/if}}</tem:vin>
+            <tem:regNumber>{{#if regNumber }}{{ regNumber }}{{/if}}</tem:regNumber>
+            <tem:BodyNumber>{{#if bodyNumber }}{{ bodyNumber }}{{/if}}</tem:BodyNumber>
+            <tem:FrameNumber>{{#if frameNumber }}{{ frameNumber }}{{/if}}</tem:FrameNumber>
+            <tem:formNumber>{{#if formNumber }}{{ formNumber }}{{/if}}</tem:formNumber>
+            <tem:formSeries></tem:formSeries>
+        </tem:GetCardByVin>
+    </soapenv:Body>
+</soapenv:Envelope>

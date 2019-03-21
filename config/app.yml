@@ -1,0 +1,7 @@
+port: 3200
+db:
+  local: mongodb://127.0.0.1:27017/abto
+secrets:
+  app_key: 4jk23jk42jkbjk4b23bj4bj2$#3b@k~kj2j3&4jbj
+  token: j2k4n24jk2b34jk2b34jb23jk4b23k4b23jj;l;m6m4
+  cookie: cookie
